@@ -1,0 +1,1 @@
+g++ -g -Wall -Wextra -o prog *.cpp $(pkg-config --cflags --libs sdl2)
