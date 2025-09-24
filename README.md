@@ -35,5 +35,11 @@ Rendering is implemented using the **SDL2 library**.
   - **A** = two slanted segments + one horizontal bar.  
   - **O** = approximated with four quadratic Bézier curves forming an ellipse.  
 
+---
+
+
+### Compilation  
+```bash
+g++ -g -Wall -Wextra -o prog *.cpp $(pkg-config --cflags --libs sdl2)
 
 
