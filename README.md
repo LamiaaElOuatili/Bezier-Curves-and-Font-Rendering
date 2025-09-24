@@ -9,7 +9,6 @@ The goal of this project is to design a **C++ program** that generates glyphs co
 
 Rendering is implemented using the **SDL2 library**.    
 
----
 
 ## Features  
 - Implementation of **Bézier curves** (linear, quadratic, and generic) using the **De Casteljau algorithm**.  
@@ -20,7 +19,6 @@ Rendering is implemented using the **SDL2 library**.
   - 🖤 Filled with a **bold** version displayed side by side  
   - ❤️ Red outline  
 
----
 
 ## Design & Architecture  
 
@@ -35,7 +33,6 @@ Rendering is implemented using the **SDL2 library**.
   - **A** = two slanted segments + one horizontal bar.  
   - **O** = approximated with four quadratic Bézier curves forming an ellipse.  
 
----
 
 
 ### Compilation  
