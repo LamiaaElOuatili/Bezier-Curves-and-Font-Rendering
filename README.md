@@ -9,8 +9,24 @@ The goal of this project is to design a **C++ program** that generates glyphs co
 
 Rendering is implemented using the **SDL2 library**.    
 
+## What are Bézier Curves?  
+Bézier curves are **mathematical curves** widely used in **computer graphics, design, and typography**. They were introduced by the French engineer **Pierre Bézier** in the 1960s for car body design at Renault.  
 
-## Features  
+- A Bézier curve is defined by a set of **control points**:  
+  - **Linear Bézier curve** → a straight line between 2 points.  
+  - **Quadratic Bézier curve** → defined by 3 points (two endpoints and one control point).  
+  - **Cubic Bézier curve** → defined by 4 points (two endpoints and two control points).
+ 
+  <img width="718" height="231" alt="image" src="https://github.com/user-attachments/assets/83762fc8-0eb5-4529-8229-ef766f68a983" />
+
+
+- The curve’s shape is influenced by its control points but only passes through the **endpoints**.  
+
+- They are computed using the **De Casteljau algorithm**, which relies on repeated **linear interpolation** until the curve is fully defined.  
+
+Bézier curves are the foundation of **vector graphics, TrueType fonts, and scalable digital typography**, since they allow smooth scaling without pixelation. 
+
+## Features of the program
 - Implementation of **Bézier curves** (linear, quadratic, and generic) using the **De Casteljau algorithm**.  
 - Object-oriented design with modular, maintainable code.  
 - Glyph generation for **all uppercase letters of the alphabet**.  
